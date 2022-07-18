@@ -1,0 +1,91 @@
+.sobre{
+    background-color: #170132;
+}
+
+.sobre .coluna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cabecalho{
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    padding: .1rem;
+    background: linear-gradient(#3d235e,#573e54,#575c69 #170132);
+}
+
+.cabecalho span{
+    font-size: 3.5rem;
+    color: #fff;
+    background: linear-gradient(#3d235e,#573e54,#575c69);
+    border-radius: .9rem;
+    padding: .2rem 1rem;
+
+}
+.cabecalho span.space{
+    background: none;
+    
+}
+
+.sobre .coluna .image{
+    flex: 1 1 40rem;
+
+}
+
+
+.sobre .coluna .image img{
+    margin-left: 30px;
+    width: 90%;
+}
+
+.sobre .coluna .content{
+    flex: 1 1 40rem;
+
+}    
+
+.sobre .coluna .content h3{
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+
+
+.sobre .coluna .content p{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    margin-right: 2rem;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px){
+
+    .cabecalho{
+        padding-bottom: 20px;
+    }
+
+    .cabecalho span{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+   
+
+    .sobre .coluna .content h3{
+        text-align: center;
+    }
+
+    .sobre .coluna .content p {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1.3rem 0;
+    margin: 0 3rem;
+    text-align: justify;
+    
+    }
+}
+

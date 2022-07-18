@@ -1,0 +1,143 @@
+.projeto{
+    padding: 15px 9%;
+    padding-top: 80px;
+}
+
+.projeto .box-containerP{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 50px;
+}
+
+.projeto .box-containerP .boxP{
+    height: 55rem;
+    width: 35rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #170132;;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+/***************** video ****************/
+.projeto .box-containerP .boxP video{
+    height: 80px;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.projeto .box-containerP .boxP video:hover{
+    transform: scale(1.1);
+}
+
+.box-containerP .popup-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.box-containerP .popup-video video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.box-containerP .popup-video span{
+    position: absolute;
+    color: #fff;
+    top: 150px;
+    right: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.box-containerP .popup-video .ico{
+    margin: 56px;
+}
+
+/*/***************************/
+.projeto .box-containerP .boxP h3{
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+
+.projeto .box-containerP .boxP p{
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+.projeto .box-containerP .boxP .botn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #361542;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    margin: 10px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.projeto .box-containerP .boxP .botn:hover{
+    background: #7f1da3;
+}
+
+.projeto .box-containerP .boxP:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+    
+
+@media (max-width: 400px){
+    .projeto .box-containerP .boxP{
+        height: 70rem;
+        width: 35rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+}
+
+
+
+/************ video ***********/
+
+@media(max-width: 768px){
+    .box-containerP .popup-video video{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .box-containerP .popup-video span{
+        top: 100px;
+        right: 10px;
+        font-size: 40px;
+        margin: 20px ;
+       
+    }
+}
+
+/****************************/

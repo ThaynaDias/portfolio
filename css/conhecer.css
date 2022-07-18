@@ -1,0 +1,145 @@
+/**********  em baixo do menu   *********/
+
+section{
+    min-height: 100vh;
+    padding: 0.9%;
+    padding-top: 7.5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 9rem;
+    background: linear-gradient(#3d235e,
+    #361542,#573e54,#1c3166);
+    font-size: 1.9rem;
+    color: var(--branco);
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
+    transition: all .3s ease-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    color: rgb(168, 167, 167);
+}
+
+.comeco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(../img/wave\ \(8\).svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.comeco .image img{
+    width:50vw;
+    animation: float 3s linear infinite;
+}
+
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+    
+}
+
+.comeco .content h1{
+     font-size: 6.6rem;
+     font-weight: normal;
+     color: #333;
+     text-transform: uppercase;
+}
+
+
+.comeco .content h1 span{
+    color: var(--roso-claro);
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+
+.comeco .content p{
+    font-size: 3.6rem;
+    color: #666;
+    padding: 3rem 0;
+}
+
+
+.content .icons{
+    margin: 2rem 0;
+}
+
+.content .icons a{
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: #3d235e;
+}
+
+.icons a:hover{
+    color: #66287cf3;
+
+}
+
+
+
+@media (max-width: 991px){
+    section{
+        padding: 0.3%;
+        padding-top: 7.5rem;
+    }
+
+    .content {
+        margin-left: 2rem;
+    }
+
+    .comeco .content h1{
+        font-size: 5rem;
+       
+    }
+
+    .comeco .content p{
+        font-size: 2rem;
+       
+    }
+}
+
+@media (max-width: 768px){
+    .comeco{
+        flex-flow: column-reverse;
+    }
+    
+    .comeco .image img{
+        width: 85%;
+        margin: 25px; 
+    }
+
+    .comeco .content{
+        font-size: 5rem;
+        text-align: center;
+    }
+   
+    .btn{
+        align-items: center;
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 400px){
+    .comeco .content h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .comeco .content p{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
