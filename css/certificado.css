@@ -54,9 +54,9 @@
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 430px){
     .box-containerC .boxC{
-        height: 20rem;
-        width: 27rem;
+        height: 25rem;
+        width: 35rem;
     }
 }
